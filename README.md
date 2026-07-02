@@ -19,7 +19,8 @@ You'll be prompted to paste your API key interactively — the key never touches
 
 #### 2. Allow sbx access to Ollama Cloud (one-time)
 ```shell
-sbx policy init balanced
+# Tip: The `sbx setup` defaults are sufficient for most setups
+sbx setup
 sbx policy allow network "ollama.com,*.ollama.com"
 ```
 
