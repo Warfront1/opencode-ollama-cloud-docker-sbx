@@ -12,14 +12,19 @@ A custom [Docker Sandbox](https://docs.docker.com/ai/sandboxes/) template that s
 #### 1. Store your Ollama Cloud API key (one-time)
 
 Get your API key from [Ollama Cloud](https://ollama.com/settings/keys)
-```
+```shell
+# The following command will interactively prompt you for your Ollama Cloud API key
 sbx secret set-custom -g --host ollama.com --host *.ollama.com --env OLLAMA_API_KEY
 ```
-You'll be prompted to paste your API key interactively — the key never touches your shell history or command line.
 
-#### 2. Run the Agent
-
+#### 2. Allow sbx access to Ollama Cloud (one-time)
+```shell
+sbx policy allow network "ollama.com,*.ollama.com"
 ```
+
+#### 3. Run the Agent
+
+```shell
 sbx run opencode --template warfront1ococds/opencode-ollama-cloud-docker-sbx:latest
 ```
 
