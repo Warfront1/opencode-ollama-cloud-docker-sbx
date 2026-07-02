@@ -1,0 +1,17 @@
+.git
+.github
+.idea
+.junie
+.vscode
+.docker
+*.tar
+*.log
+*.tmp*
+*.temp
+.env
+.env.*
+OLLAMA_API_KEY
+.gitignore
+.gitattributes
+README.md
+DEVELOPERS.md

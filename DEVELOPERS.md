@@ -18,9 +18,9 @@ sbx secret set-custom -g --host ollama.com --host *.ollama.com --env OLLAMA_API_
 ```
 Build and test the sandbox
 ```shell
-docker build -t opencode-ollama-cloud-sandbox:v2 .
-docker image save opencode-ollama-cloud-sandbox:v2 -o opencode-ollama-cloud-sandbox.tar
-sbx template load opencode-ollama-cloud-sandbox.tar
+docker build -t opencode-ollama-cloud-docker-sbx:latest .
+docker image save opencode-ollama-cloud-docker-sbx:latest -o opencode-ollama-cloud-docker-sbx.tar
+sbx template load opencode-ollama-cloud-docker-sbx.tar
 sbx policy allow network "ollama.com,*.ollama.com"
-sbx run opencode --template opencode-ollama-cloud-sandbox:v2
+sbx run opencode --template opencode-ollama-cloud-docker-sbx:latest
 ```

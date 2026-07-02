@@ -20,7 +20,7 @@ You'll be prompted to paste your API key interactively — the key never touches
 #### 2. Run the Agent
 
 ```
-sbx run opencode --template <your-registry>/opencode-ollama-cloud-sandbox:v2
+sbx run opencode --template warfront1ococds/opencode-ollama-cloud-docker-sbx:latest
 ```
 
 ## Want to contribute or modify this template?
