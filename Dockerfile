@@ -1,4 +1,4 @@
-FROM docker/sandbox-templates:opencode
+FROM docker/sandbox-templates:opencode-docker-0.4.0
 
 USER root
 
